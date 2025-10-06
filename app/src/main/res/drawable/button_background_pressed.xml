@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Màu nền đậm hơn khi được nhấn -->
+    <solid android:color="#5c3d2e" />
+    <corners android:radius="24dp" />
+</shape>

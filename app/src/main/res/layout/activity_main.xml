@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient"> <!-- THAY ĐỔI: Sử dụng background gradient -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Gõ Mõ Tích Công Đức"
+        android:textColor="#5c3d2e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="#80000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/> <!-- THAY ĐỔI: Thêm font và bóng mờ -->
+
+    <TextView
+        android:id="@+id/tv_merit_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Công đức: 0"
+        android:textColor="#d9534f"
+        android:textSize="22sp"
+        android:textStyle="bold" /> <!-- THAY ĐỔI: Thêm font -->
+
+    <RelativeLayout
+        android:id="@+id/fish_container"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:elevation="8dp"> <!-- THAY ĐỔI: Thêm elevation để tạo chiều sâu -->
+
+        <ImageView
+            android:id="@+id/iv_wooden_fish"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/fish_closed"
+            android:contentDescription="Gõ Mõ" />
+
+        <ImageView
+            android:id="@+id/iv_mallet"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:src="@drawable/mallet"
+            android:pivotX="0"
+            android:pivotY="0"/>
+
+    </RelativeLayout>
+
+    <!-- THAY ĐỔI: Áp dụng style mới cho Button -->
+    <Button
+        android:id="@+id/btn_auto_knock"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fish_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_selector"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="Tự Động Gõ"
+        android:textAllCaps="false"
+        android:textColor="#f0e6d2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="4dp"/>
+
+</RelativeLayout>

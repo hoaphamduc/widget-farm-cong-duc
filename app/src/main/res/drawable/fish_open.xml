@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Phần thân và mắt cá giữ nguyên -->
+    <path
+        android:pathData="M50,10C20,10 10,40 10,50C10,60 20,90 50,90C80,90 90,60 90,50C90,40 80,10 50,10Z"
+        android:strokeWidth="2"
+        android:fillColor="#8B4513"
+        android:strokeColor="#5c3d2e"/>
+    <path
+        android:pathData="M80,50A30,30 0,0 1,50 80A30,30 0,0 1,20 50"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:strokeColor="#5c3d2e"/>
+    <path
+        android:pathData="M75,36m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:strokeWidth="1"
+        android:fillColor="#fff"
+        android:strokeColor="#5c3d2e"/>
+    <path
+        android:pathData="M76,38m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#5c3d2e"/>
+
+    <!-- THAY ĐỔI: Vẽ miệng mở bằng hai đường cong thay vì một đường thẳng -->
+    <path
+        android:strokeLineCap="round"
+        android:pathData="M 70,50 Q 77.5,42 85,50"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:strokeColor="#5c3d2e"/>
+    <path
+        android:strokeLineCap="round"
+        android:pathData="M 70,50 Q 77.5,58 85,50"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:strokeColor="#5c3d2e"/>
+</vector>
